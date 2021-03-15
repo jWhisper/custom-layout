@@ -1,4 +1,5 @@
 # GO Project Standard Layout
+https://github.com/golang-standards/project-layout
 
 ## api
 proto文件,hook到一个统一的api仓库
