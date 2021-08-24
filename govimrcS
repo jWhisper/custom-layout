@@ -233,7 +233,7 @@ let g:tagbar_type_go = {
             \ 'ctype' : 't',
             \ 'ntype' : 'n'
             \ },
-            \ 'ctagsbin'  : 'path_to_gotags',
+            \ 'ctagsbin'  : 'gotags',
             \ 'ctagsargs' : '-sort -silent'
             \ }
 
@@ -243,13 +243,15 @@ noremap <F8> :TagbarToggle<CR>
 " gopls
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " autoComplete
-au filetype go inoremap <buffer> . .<C-x><C-o>
+" au filetype go inoremap <buffer> . .<C-x><C-o>
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " godef
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " use ctrl ] or gd
-let g:go_def_mode = 'godef'
+" let g:go_def_mode = 'godef'
 
 " open the definition in a new tab
 let g:godef_split=0
